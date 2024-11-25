@@ -1,0 +1,94 @@
+body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    .App {
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #ffd700;
+    }
+
+    button {
+      background-color: #ffd700;
+      color: #1a1a1a;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    input, select {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ffd700;
+      background-color: #1a1a1a;
+      color: #ffffff;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      background-color: #333333;
+      margin: 5px 0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .roulette-wheel {
+      margin: 20px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      border: 10px solid #ffd700;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .roulette-segment {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 50%;
+      height: 50%;
+      transform-origin: left top;
+      background-color: red;
+      color: white;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .roulette-segment span {
+      transform: translate(-50%, -50%) rotate(-60deg);
+    }
+
+    @media (max-width: 600px) {
+      .App {
+        padding: 10px;
+      }
+
+      button, input, select {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .roulette-wheel {
+        width: 200px;
+        height: 200px;
+      }
+    }
